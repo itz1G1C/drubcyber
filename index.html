@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> DrubCyber | دروبسايبر </title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.png">
+    
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+        * {
+            font-family: "Rubik", sans-serif;
+        }
+        body {
+            background-color: #121212;
+            color: #ffffff;
+        }
+        .navbar, .footer {
+            background-color: #1c1c1c;
+        }
+        .card {
+            background-color: #1c1c1c;
+            border: none;
+        }
+        .card-title, .card-text {
+            color: #ffffff;
+        }
+        .btn-primary {
+            background-color: #007bff;
+            border: none;
+        }
+        .btn-primary:hover {
+            background-color: #0056b3;
+        }
+        .note {
+            color: #0056b3;
+        }
+        .pagination {
+            justify-content: center;
+        }
+        .page-item.disabled .page-link {
+            background-color: #1c1c1c;
+            border-color: #1c1c1c;
+            color: #6c757d;
+        }
+        .page-item.active .page-link {
+            background-color: #007bff;
+            border-color: #007bff;
+        }
+        .page-link {
+            color: #007bff;
+            background-color: #1c1c1c;
+            border: 1px solid #1c1c1c;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark mt-0">
+        <a class="navbar-brand" href="#"> دروبسايبر </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="تبديل التنقل">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">الرئيسية <span class="sr-only">(الحالي)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" href="#">أدوات ومصادر <span class="badge bg-secondary"> قريبًا</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" href="#">تحديات  <span class="badge bg-secondary"> قريبًا</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" href="#">OSINT  <span class="badge bg-secondary"> قريبًا</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" data-toggle="modal" data-target="#followUsModal"> تابعنا</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <p style=" text-align: center; color: #6c757d;"> آخر تحديث: 24/06/2024م</p>
+    <div class="modal fade" id="followUsModal" tabindex="-1" role="dialog" aria-labelledby="followUsModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content" style="background-color: #121212; text-align: center;">
+                <div class="modal-body">
+                    <div class="social-icons-modal mt-3 ">
+                        <a href="#"> <img width="20" height="20" src="https://img.icons8.com/ios/50/007bff/instagram-new--v1.png" alt="instagram-new--v1"/></a>
+                        <a href="https://x.com/DrubCyber"> <img width="20" height="20" src="https://img.icons8.com/ios/50/007bff/twitterx--v1.png" alt="twitterx--v1"/></a>
+                        <a href="#"> <img width="20" height="20" src="https://img.icons8.com/ios/50/007bff/whatsapp--v1.png" alt="twitterx--v1"/></a>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">إغلاق</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Main Content -->
+    <div class="container ">
+        <div class="text-center">
+            <h1>المسار المجاني تعلم الأمن السيبراني </h1>
+            <p class="lead"> ابدأ رحلتك في عالم الأمن السيبراني من هنا. نوصي بالتدرج من الأسهل إلى الأصعب لتحقيق أفضل النتائج.</p>
+        </div>
+        <hr style="background-color: #0056b3;">
+        <div id="card-container" class="row mt-4 text-center">
+            <!-- Cards go here -->
+            <!-- Example of card HTML structure -->
+            <!-- Add your cards here -->
+        </div>
+
+        <!-- Pagination Controls -->
+        <nav aria-label="Page navigation example">
+            <ul id="pagination" class="pagination"></ul>
+        </nav>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer mt-5 py-3 text-center">
+        <div class="container">
+            <p class="text-muted">
+                يرجى ملاحظة أن جميع المحتويات المعروضة على هذا الموقع ليست مملوكة لنا. نحن لا ندعي أي حقوق ملكية على النصوص، الصور، الفيديوهات أو أي مواد أخرى منشورة هنا. جميع الحقوق تعود إلى أصحابها الأصليين.
+            </p>
+            
+        </div>
+    </footer>
+    
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        const cards = [
+            {
+                title: 'مقدمة في البحث',
+                text: 'مقدمة موجزة عن مهارات البحث لاختبار الاختراق.',
+                link: 'https://tryhackme.com/room/introtoresearch',
+                //badge: 'جديد'
+            },
+            {
+                title: 'أساسيات لينكس 1',
+                text: 'ابدأ رحلة تعلم أساسيات نظام لينكس. تعلم كيفية تشغيل بعض الأوامر الأساسية الأولى في محطة تفاعلية.',
+                link: 'https://tryhackme.com/room/linuxfundamentalspart1'
+            },
+            {
+                title: 'أساسيات اختبار الاختراق',
+                text: 'أساسيات فحص الاختراق.',
+                link: 'https://tryhackme.com/room/pentestingfundamentals'
+            },
+            {
+                title: 'الفريق الأحمر',
+                text: 'تعلَّم خطوات وإجراءات تفاعلات الفريق الأحمر، بما في ذلك التخطيط، والأطر، والتوثيق.',
+                link: 'https://tryhackme.com/r/room/redteamengagements'
+            },
+            {
+                title: 'Hip Flask',
+                text: 'شرح مفصَّل يغطي منهجية اختبار الاختراق ضد خادم ضعيف.',
+                link: 'https://tryhackme.com/r/room/redteamengagements'
+            },
+            {
+                title: 'Google Dorking',
+                text: 'شرح كيفية عمل محركات البحث واستخدامها للعثور على المحتوى المخفي.',
+                link: 'https://tryhackme.com/r/room/googledorking'
+            },
+            {
+                title: 'Shodan.io',
+                text: 'تعرَّف على Shodan.io وكيفية استخدامه في كشف وفحص الأجهزة.',
+                link: 'https://tryhackme.com/r/room/googledorking'
+            },
+            {
+                title: 'فحص الويب',
+                text: 'تعلَّم أساسيات الفحص الآلي للويب.',
+                link: 'https://tryhackme.com/r/room/rustscan'
+            },
+            {
+                title: 'Metasploit Framework ',
+                text: 'مقدمة إلى العناصر الرئيسية في إطار عمل Metasploit',
+                link: 'https://tryhackme.com/room/metasploitintro'
+            },
+            {
+                title: 'Hydra ',
+                text: 'تعرَّف على Hydra واستخدمه كأداة قوية لكسر تأمين الشبكات لاختراق والحصول على بيانات اعتماد موقع ويب بواسطة تقنية التخمين العنيف',
+                link: 'https://tryhackme.com/r/room/hydra'
+            },
+            {
+                title: 'مقدمة في علم التحليل الرقمي ',
+                text: ' تعلم عن علم التحليل الرقمي والعمليات المتعلقة به، وقم بتجربة مثال عملي.',
+                link: 'https://tryhackme.com/r/room/introdigitalforensics'
+            },
+            {
+                title: 'Nessus',
+                text: ' تعلم كيفية إعداد واستخدام نيسوس (Nessus)، أداة فحص الثغرات الشهيرة.',
+                link: 'https://tryhackme.com/r/room/rpnessusredux'
+            },
+            {
+                title: 'Introduction to SIEM',
+                text: ' مقدمة في إدارة معلومات الأمن والأحداث (SIEM).',
+                link: 'https://tryhackme.com/r/room/introtosiem'
+            },
+            {
+                title: 'OpenVAS',
+                text: ' تعلم أساسيات إدارة التهديدات والضعف باستخدام أداة فحص التقييم المفتوحة للضعف (OpenVAS).',
+                link: 'https://tryhackme.com/r/room/openvas'
+            },
+            {
+                title: 'مقدمة في أجهزة الإفخاخ (Honeypots).',
+                text: ' غرفة موجّهة تغطي نشر أجهزة الإفخاخ وتحليل أنشطة شبكات البوتنت.',
+                link: 'https://tryhackme.com/r/room/introductiontohoneypots'
+            },
+            {
+                title: 'Linux PrivEsc ',
+                text: 'قم بممارسة مهارات تصعيد الامتياز على نظام Linux عبر استخدام آلة افتراضية Debian مُعدة عن عمد بشكل غير صحيح، مع وجود عدة طرق للحصول على صلاحيات المستخدم الجذر! الوصول عبر SSH ',
+                link: 'https://tryhackme.com/r/room/linuxprivesc'
+            },
+            {
+                title: ' اساسيات الفريق لأحمر',
+                text: 'تعلم عن أساسيات التفاعل الأحمر، والمكونات الرئيسية والأطراف المعنية، وكيف يختلف التفاعل الأحمر عن التفاعلات الأمنية الإلكترونية الأخرى.',
+                link: 'https://tryhackme.com/r/room/redteamfundamentals'
+            },
+            {
+                title: 'Vulnversity',
+                text: 'تعلّم عن استطلاع النشاط النشط، هجمات تطبيقات الويب، وتصعيد الامتياز.',
+                link: 'https://tryhackme.com/r/room/vulnversity'
+            },
+            {
+                title: ' OWASP Top 10',
+                text: ' تعرَّف على واستغل كل من ثغرات OWASP Top 10؛ وهي العشرة المخاطر الأمنية الأكثر حرجًا لتطبيقات الويب.',
+                link: ' https://tryhackme.com/r/room/owasptop10'
+            },
+            {
+                title: ' OWASP Juice Shop',
+                text: ' تستخدم هذه الغرفة تطبيق الويب المعرّض للثغرات Juice Shop لتعلم كيفية تحديد واستغلال الثغرات الشائعة في تطبيقات الويب.',
+                link: ' https://tryhackme.com/r/room/owaspjuiceshop'
+            },
+            {
+                title: ' Dumping Router Firmware',
+                text: ' هل سبق لك أن تساءلت عن كيفية عمل جهاز التوجيه الخاص بك؟ ما هو نظام التشغيل الذي يعمل به؟ ما الذي يجعله يعمل؟',
+                link: ' https://tryhackme.com/r/room/rfirmware'
+            },
+            {
+                title: ' Intro To Pwntools',
+                text: 'غرفة تمهيدية لأداة استغلال الثغرات الثنائية Pwntools. ',
+                link: ' https://tryhackme.com/r/room/introtopwntools'
+            },
+            {
+                title: ' Pwnkit: CVE-2021-4034',
+                text: 'مختبر تفاعلي لاستغلال وإصلاح ثغرة Pwnkit (CVE-2021-4034) في حزمة Polkit. ',
+                link: ' https://tryhackme.com/r/room/pwnkit'
+            },
+            {
+                title: ' Windows PrivEsc Arena',
+                text: 'سيتعلم الطلاب كيفية تصعيد الامتيازات باستخدام جهاز افتراضي ضعيف للغاية يعمل بنظام Windows 7. خدمة RDP مفتوحة.',
+                link: ' https://tryhackme.com/r/room/windowsprivescarena'
+            },
+            {
+                title: ' Linux PrivEsc Arena',
+                text: 'سيتعلم الطلاب كيفية تصعيد الامتيازات باستخدام جهاز افتراضي ضعيف للغاية يعمل بنظام Linux. خدمة SSH مفتوحة. ',
+                link: 'https://tryhackme.com/r/room/linuxprivescarena'
+            },
+            {
+                title: ' تاريخ البرامج الضارة',
+                text: 'تعلم عن أول أشكال البرمجيات الضارة وكيف تطورت إلى الشفرات الخبيثة التي نراها اليوم. ',
+                link: 'https://tryhackme.com/r/room/historyofmalware'
+            },
+            {
+                title: 'مقدمة في البرمجيات الضارة',
+                text: 'تعرف على البرامج البرمجيات الضارة ',
+                link: 'https://tryhackme.com/r/room/malmalintroductory'
+            },
+            {
+                title: 'مقدمة في هندسة عكس البرمجيات على نظام Windows',
+                text: 'مقدمة في هندسة عكس البرمجيات لنظام Windows x64',
+                link: 'https://tryhackme.com/r/room/windowsreversingintro'
+            },
+           
+        ];
+
+        const cardsPerPage = 9;
+        let currentPage = 1;
+
+        function renderCards() {
+            const startIndex = (currentPage - 1) * cardsPerPage;
+            const endIndex = startIndex + cardsPerPage;
+            const currentCards = cards.slice(startIndex, endIndex);
+
+            const cardContainer = document.getElementById('card-container');
+            cardContainer.innerHTML = '';
+
+            currentCards.forEach(card => {
+                const cardHTML = `
+                    <div class="col-md-4">
+                        <div class="card mb-4">
+                            <div class="card-body">
+                                <h5 class="card-title">
+                                    ${card.title}
+                                    ${card.badge ? `<span class="badge rounded-pill bg-primary">${card.badge}</span>` : ''}
+                                </h5>
+                                <p class="card-text">${card.text}</p>
+                                <a href="${card.link}" target="_blank" class="btn btn-primary">ابدأ الآن</a>
+                            </div>
+                        </div>
+                    </div>
+                `;
+                cardContainer.innerHTML += cardHTML;
+            });
+        }
+
+        function renderPagination() {
+            const totalPages = Math.ceil(cards.length / cardsPerPage);
+            const pagination = document.getElementById('pagination');
+            pagination.innerHTML = '';
+
+            for (let i = 1; i <= totalPages; i++) {
+                const pageItem = document.createElement('li');
+                pageItem.className = `page-item ${i === currentPage ? 'active' : ''}`;
+                pageItem.innerHTML = `<a class="page-link" href="#">${i}</a>`;
+                pageItem.addEventListener('click', function() {
+                    currentPage = i;
+                    renderCards();
+                    renderPagination();
+                });
+                pagination.appendChild(pageItem);
+            }
+        }
+
+        document.addEventListener('DOMContentLoaded', function() {
+            renderCards();
+            renderPagination();
+        });
+
+
+    </script>
+</body>
+</html>
